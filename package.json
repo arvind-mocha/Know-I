@@ -1,0 +1,22 @@
+{
+  "name": "know-i",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/Main.scss Main/App/static/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arvind-mocha/Know-I.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arvind-mocha/Know-I/issues"
+  },
+  "homepage": "https://github.com/arvind-mocha/Know-I#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
