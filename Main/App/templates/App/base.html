@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Know-I</title>
+    <link rel="stylesheet" href="{% static 'main.scss' %}" />
   </head>
   <body>
     {% block content %}{% endblock %}
+    <scripts src="{% static 'javascript/main.js' %}" />
   </body>
 </html>
