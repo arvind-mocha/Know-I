@@ -9,5 +9,5 @@ class Members(models.Model):
     image = models.URLField(max_length=200)
 class Events(models.Model):
     e_title = models.CharField(max_length=30)
-    e_content = models.CharField(max_length=300)
+    e_content = models.TextField()
     e_image =  models.URLField(max_length=200)
