@@ -39,3 +39,23 @@
     }
   }
 }
+
+@include respond(tab-land) {
+  .members {
+    &__box {
+      width: 80%;
+    }
+  }
+}
+
+@include respond(tab-port) {
+  .members {
+    &__box {
+      width: 95%;
+      left: 51%;
+      &--container {
+        column-gap: 3rem;
+      }
+    }
+  }
+}

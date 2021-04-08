@@ -37,3 +37,15 @@
     opacity: 0.8;
   }
 }
+
+@include respond(phone) {
+  .mcard {
+    grid-template-rows: repeat(2, 6rem);
+  }
+}
+
+@include respond(phone-small) {
+  .mcard {
+    border-radius: 3rem;
+  }
+}

@@ -97,6 +97,14 @@ body {
     color: #fff;
     opacity: 0.8; }
 
+@media only screen and (max-width: 37.5em) {
+  .mcard {
+    grid-template-rows: repeat(2, 6rem); } }
+
+@media only screen and (max-width: 30.5em) {
+  .mcard {
+    border-radius: 3rem; } }
+
 .members__heading {
   padding-top: 5rem;
   color: #fff;
@@ -129,6 +137,17 @@ body {
     column-gap: 5rem;
     row-gap: 4rem;
     grid-template-columns: repeat(auto-fit, 45%); }
+
+@media only screen and (max-width: 75em) {
+  .members__box {
+    width: 80%; } }
+
+@media only screen and (max-width: 56.25em) {
+  .members__box {
+    width: 95%;
+    left: 51%; }
+    .members__box--container {
+      column-gap: 3rem; } }
 
 .navbar {
   background: #000; }
