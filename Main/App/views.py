@@ -4,7 +4,7 @@ from django.shortcuts import render
 def home(request):
     return render(request,'App/home.html')
 
-def event(request):
+def events(request):
     return render(request,'App/event.html')
 
 def members(request):
