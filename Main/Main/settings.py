@@ -122,5 +122,5 @@ USE_TZ = True
 DIRS= [os.path.join(BASE_DIR,'Application/templates')]
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "Application/static",]
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [BASE_DIR / "App/static",]

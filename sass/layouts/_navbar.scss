@@ -1,0 +1,28 @@
+.navbar {
+  background: $color-black;
+}
+
+.navbar-brand {
+  padding: 1rem 0rem 1rem 3rem;
+  img {
+    height: 6rem;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+
+  li {
+    padding-right: 2rem;
+
+    .active {
+      color: $color-white !important;
+
+      @include text-shadow-white;
+    }
+
+    .nav-link {
+      font-size: 2.2rem;
+    }
+  }
+}

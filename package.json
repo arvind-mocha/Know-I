@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/arvind-mocha/Know-I#readme",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "particles.js": "^2.0.0"
   }
 }

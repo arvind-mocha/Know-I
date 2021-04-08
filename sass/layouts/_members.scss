@@ -1,0 +1,41 @@
+.members {
+  &__heading {
+    padding-top: 5rem;
+    color: $color-white;
+    @include text-shadow-white;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  &__subheading {
+    color: $color-white;
+    @include text-shadow-white;
+    text-align: center;
+    opacity: 0.8;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+  }
+
+  &__box {
+    display: grid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    padding-bottom: 5rem;
+
+    &--heading {
+      color: $color-white;
+      @include text-shadow-white;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    &--container {
+      display: grid;
+      column-gap: 5rem;
+      row-gap: 4rem;
+      grid-template-columns: repeat(auto-fit, 45%);
+    }
+  }
+}

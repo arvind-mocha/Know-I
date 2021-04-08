@@ -1,1 +1,33 @@
-{% extends "App/base.html" %} {% block content %} {% endblock %}
+{% extends "App/base.html" %} {% load static %} {% block content %}
+<main class="fluid-container members">
+  <h1 class="members__heading">CLUB MEMBERS</h1>
+  <h3 class="members__subheading">GET TO KNOW THE BRAINS BEHIND KNOW-I CLUB</h3>
+  <div class="members__box">
+    <div class="members__box--container">
+      <div class="mcard">
+        <img class="mcard__img" src="{% static 'images/logo.png' %}" alt="" />
+        <h3 class="mcard__name">Padmavathy</h3>
+        <h3 class="mcard__heading">staff</h3>
+      </div>
+      <div class="mcard">
+        <img class="mcard__img" src="{% static 'images/tomb.jpg' %}" alt="" />
+        <h3 class="mcard__name">Padmavathy</h3>
+        <h3 class="mcard__heading">staff</h3>
+      </div>
+    </div>
+    <h1 class="members__box--heading">BOARD MEMBERS</h1>
+    <div class="members__box--container">
+      <div class="mcard">
+        <img class="mcard__img" src="{% static 'images/logo.png' %}" alt="" />
+        <h3 class="mcard__name">Padmavathy</h3>
+        <h3 class="mcard__heading">staff</h3>
+      </div>
+      <div class="mcard">
+        <img class="mcard__img" src="{% static 'images/tomb.jpg' %}" alt="" />
+        <h3 class="mcard__name">Padmavathy</h3>
+        <h3 class="mcard__heading">staff</h3>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

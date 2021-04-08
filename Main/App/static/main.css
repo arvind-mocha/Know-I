@@ -1,3 +1,40 @@
+@keyframes flicker {
+  0%,
+  9%,
+  20%,
+  29%,
+  35%,
+  44%,
+  48%,
+  52%,
+  56%,
+  60%,
+  62%,
+  64%,
+  66%,
+  68%,
+  70% {
+    color: #ddd;
+    text-shadow: none; }
+  10%,
+  19%,
+  30%,
+  34%,
+  45%,
+  47%,
+  53%,
+  55%,
+  58%,
+  61%,
+  63%,
+  65%,
+  67%,
+  69%,
+  71%,
+  100% {
+    color: white;
+    text-shadow: 0px 0px 10px white; } }
+
 *,
 *::after,
 *::before {
@@ -28,3 +65,91 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.mcard {
+  justify-self: end;
+  display: grid;
+  grid-template-rows: repeat(2, 8rem);
+  grid-template-columns: 40% 60%;
+  border: 0.25rem solid #ffe268;
+  border-radius: 5rem;
+  column-gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
+  grid-template-areas: "img name" "img head"; }
+  .mcard__img {
+    grid-area: img;
+    height: 100%;
+    width: 100%;
+    border-radius: 27%;
+    box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
+    border: 0.25rem solid #ffe268;
+    transform: scale(1.05, 1.05); }
+  .mcard__name {
+    background-color: transparent;
+    grid-area: name;
+    color: #fff;
+    opacity: 0.8; }
+  .mcard__heading {
+    background-color: transparent;
+    grid-area: head;
+    color: #fff;
+    opacity: 0.8; }
+
+.members__heading {
+  padding-top: 5rem;
+  color: #fff;
+  text-shadow: 0rem 0rem 1rem white;
+  font-size: 4rem;
+  text-align: center; }
+
+.members__subheading {
+  color: #fff;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  opacity: 0.8;
+  padding-bottom: 5rem;
+  font-size: 1.5rem; }
+
+.members__box {
+  display: grid;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  padding-bottom: 5rem; }
+  .members__box--heading {
+    color: #fff;
+    text-shadow: 0rem 0rem 1rem white;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .members__box--container {
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, 45%); }
+
+.navbar {
+  background: #000; }
+
+.navbar-brand {
+  padding: 1rem 0rem 1rem 3rem; }
+  .navbar-brand img {
+    height: 6rem; }
+
+.navbar-nav {
+  margin-left: auto; }
+  .navbar-nav li {
+    padding-right: 2rem; }
+    .navbar-nav li .active {
+      color: #fff !important;
+      text-shadow: 0rem 0rem 1rem white; }
+    .navbar-nav li .nav-link {
+      font-size: 2.2rem; }
+
+.members {
+  margin-top: 9rem;
+  height: fit-content;
+  background: #000;
+  position: relative; }
