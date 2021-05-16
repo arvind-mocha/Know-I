@@ -1,0 +1,25 @@
+.ecards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    &__figure {
+      overflow: hidden;
+    }
+    
+    &__title {
+      font-size: 1.2rem;
+      margin-bottom: 0.2rem;
+    }
+  
+    &__description {
+      flex: 1;
+      padding: 1rem;
+      border-width: 0 1px 1px 1px;
+      border-style: solid;
+      border-color: $color-yellow;
+    }
+    &__date {
+      font-size: 1rem;
+    }
+  }

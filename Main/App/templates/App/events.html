@@ -1,1 +1,60 @@
-{% extends "App/base.html" %} {% block content %} {% endblock %}
+{% extends "App/base.html" %} {% load static %} {% block content %}
+<main class="events">
+	<h1 class="events__heading">CURRENT EVENTS</h1>
+	<h3 class="events__subheading">PARTICIPATE IN EVENTS AND WIN EXCITING PRIZES</h3>
+	<div class="eventsholder">
+		<p class="eventsholder__heading"> NEW EVENT COMING SOON! </p>
+		<p class="eventsholder__subheading"> We are putting ourself to the fullest possible use, </p>
+		<p class="eventsholder__subheading"> which is all we think that any conscious entity can ever hope to do.</p>
+	</div>
+	<p class="events__heading1">PAST EVENTS </p>
+	<div class="events__box">
+		<div class="events__box--container">
+			<div class="etiles">
+				<div class="imag">
+					<img src="{% static 'images/unravel.jpg' %}" alt="Unravel" width="100%" height="100%"/>
+				</div>
+				<a href="#" class="etiles">
+					<h2 class="etiles__title">Unravel</h2>
+					<p class="etiles__description">A web development event that tests front end development skills of  CS department students. </p>
+					<h3 class="etile__date">14-02-2021 </h3>
+				</a>
+			</div>
+			<div class="etiles">
+				<a href="#" class="etiles">
+					<div class="imag">
+						<img src="{% static 'images/unravel.jpg' %}" alt="Unravel" width="100%" height="100%"/>
+					</div>
+					<h2 class="etiles__title">Unravel</h2>
+					<p class="etiles__description">A web development event that  tests front end development skills of  CS department students. </p>
+					<h3 class="etile__date">14-02-2021 </h3>
+				  </a>
+			</div>
+		</div>
+    </div>
+	<div class="events__box">
+		<div class="events__box--container">
+			<div class="etiles">
+				<a href="#" class="etiles">
+					<div class="imag">
+						<img src="{% static 'images/unravel.jpg' %}" alt="Unravel" width="100%" height="100%"/>
+					</div>
+					<h2 class="etiles__title">Unravel</h2>
+					<p class="etiles__description">A web development event that  tests front end development skills of  CS department students. </p>
+					<h3 class="etile__date">14-02-2021 </h3>
+				  </a>
+			</div>
+			<div class="etiles">
+				<a href="#" class="etiles">
+					<div class="imag">
+						<img src="{% static 'images/unravel.jpg' %}" alt="Unravel"  width="100%" height="100%"/>
+					</div>
+					<h2 class="etiles__title">Unravel</h2>
+					<p class="etiles__description">A web development event that  tests front end development skills of  CS department students. </p>
+					<h3 class="etile__date">14-02-2021 </h3>
+				  </a>
+			</div>
+		</div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,39 @@
+.etiles {  
+    height:48rem;
+    width: 25rem;
+    background-color: $color-black;
+    color: $color-white;
+    border: 0.25rem solid $color-yellow;
+    border-radius: 2.2rem;
+    box-shadow: 0rem 0rem 1rem rgba($color-yellow, 0.8);
+    align-items: center;
+
+    &__imag {
+        margin-top: 5rem;
+        border-radius: 27%;
+        box-shadow: 0rem 0rem 1rem rgba($color-yellow, 0.8);
+        border: 0.25rem solid $color-yellow;
+      }
+    
+      &__title{
+        background-color: transparent;
+        color: $color-white;
+        padding-top: 3rem;
+        opacity: 0.8;
+        align-content: center;
+      }
+    
+      &__description {
+        background-color: transparent;
+        color: $color-white;
+        font-size: medium;
+        opacity: 0.8;
+      }
+
+      &__date {
+        background-color: transparent;
+        color: $color-yellow;
+        opacity: 0.8;
+        align-content: center;
+      } 
+}
