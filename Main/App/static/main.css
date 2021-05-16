@@ -64,7 +64,8 @@ html {
   backface-visibility: hidden; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #000; }
 
 .mcard {
   justify-self: end;
@@ -77,8 +78,7 @@ body {
   align-items: center;
   overflow: hidden;
   box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
-  grid-template-areas: "img name"
- "img head"; }
+  grid-template-areas: "img name" "img head"; }
   .mcard__img {
     grid-area: img;
     height: 100%;
@@ -128,28 +128,31 @@ body {
   border: 0.25rem solid #ffe268;
   border-radius: 2.2rem;
   box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
-  align-items: center; }
+  overflow: hidden;
+  transform: translateX(40%); }
   .etiles__imag {
-    margin-top: 5rem;
-    border-radius: 27%;
-    box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
-    border: 0.25rem solid #ffe268; }
+    border-bottom: 0.25rem solid #ffe268; }
   .etiles__title {
     background-color: transparent;
+    text-align: center;
     color: #fff;
-    padding-top: 3rem;
-    opacity: 0.8;
-    align-content: center; }
+    padding-top: 2rem;
+    opacity: 0.8; }
   .etiles__description {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     background-color: transparent;
     color: #fff;
+    text-align: center;
     font-size: medium;
     opacity: 0.8; }
   .etiles__date {
     background-color: transparent;
+    text-align: center;
     color: #ffe268;
-    opacity: 0.8;
-    align-content: center; }
+    opacity: 0.8; }
+  .etiles__link {
+    text-decoration: none; }
 
 .eventsholder {
   border: 0.25rem solid #ffe268;
@@ -172,6 +175,34 @@ body {
     color: #fff;
     text-align: center;
     font-size: 2rem; }
+
+.pages {
+  border: 0.25rem solid #ffe268;
+  border-radius: 2.2rem;
+  width: 15rem;
+  height: 5rem;
+  box-shadow: 0rem 0rem 1rem #ffe268;
+  margin: auto;
+  margin-left: 48%;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  padding-top: 0.5rem;
+  display: flex; }
+  .pages__navigator {
+    flex: 1;
+    text-decoration: none;
+    color: rgba(255, 226, 104, 0.6);
+    font-size: 4rem;
+    margin-top: -1.7rem; }
+  .pages__number {
+    flex: 1;
+    background-color: #ffe268;
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    padding-top: 1rem; }
+  .pages__navigator:hover {
+    color: rgba(255, 226, 104, 0.6); }
 
 .events__heading {
   color: #fff;
@@ -303,21 +334,3 @@ body {
   margin-top: 9rem;
   position: relative;
   height: fit-content; }
-
-.ecards {
-  display: flex;
-  flex-direction: column;
-  position: relative; }
-  .ecards__figure {
-    overflow: hidden; }
-  .ecards__title {
-    font-size: 1.2rem;
-    margin-bottom: 0.2rem; }
-  .ecards__description {
-    flex: 1;
-    padding: 1rem;
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    border-color: #ffe268; }
-  .ecards__date {
-    font-size: 1rem; }
