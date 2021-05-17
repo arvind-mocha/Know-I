@@ -7,11 +7,19 @@
 
 @import "components/cards";
 @import "components/particle";
+@import "components/announcements";
+@import "components/etiles";
+@import "components/eventsholder";
+@import "components/pages";
 
 @import "layouts/events";
 @import "layouts/members";
 @import "layouts/navbar";
+@import "layouts/blog";
+@import "layouts/resources";
 
 @import "pages/events";
 @import "pages/home";
 @import "pages/members";
+@import "pages/blog";
+@import "pages/resources";

@@ -64,7 +64,8 @@ html {
   backface-visibility: hidden; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #000; }
 
 .mcard {
   justify-self: end;
@@ -104,6 +105,141 @@ body {
 @media only screen and (max-width: 30.5em) {
   .mcard {
     border-radius: 3rem; } }
+
+.announcements {
+  border: 0.25rem solid #ffe268;
+  border-radius: 2.74rem;
+  width: 45rem;
+  height: 5rem;
+  box-shadow: 0rem 0rem 1rem #ffe268;
+  margin: auto;
+  margin-top: 5rem;
+  color: #fff;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 2.2rem; }
+
+.etiles {
+  height: 48rem;
+  width: 25rem;
+  background-color: #000;
+  color: #fff;
+  border: 0.25rem solid #ffe268;
+  border-radius: 2.2rem;
+  box-shadow: 0rem 0rem 1rem rgba(255, 226, 104, 0.8);
+  overflow: hidden;
+  transform: translateX(40%); }
+  .etiles__imag {
+    border-bottom: 0.25rem solid #ffe268; }
+  .etiles__title {
+    background-color: transparent;
+    text-align: center;
+    color: #fff;
+    padding-top: 2rem;
+    opacity: 0.8; }
+  .etiles__description {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: medium;
+    opacity: 0.8; }
+  .etiles__date {
+    background-color: transparent;
+    text-align: center;
+    color: #ffe268;
+    opacity: 0.8; }
+  .etiles__link {
+    text-decoration: none; }
+
+.eventsholder {
+  border: 0.25rem solid #ffe268;
+  border-radius: 1.74rem;
+  width: 85rem;
+  height: 17rem;
+  box-shadow: 0rem 0rem 1rem #ffe268;
+  margin: auto;
+  margin-top: 5rem;
+  color: #fff;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 2.2rem; }
+  .eventsholder__heading {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem; }
+  .eventsholder__subheading {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem; }
+
+.pages {
+  border: 0.25rem solid #ffe268;
+  border-radius: 2.2rem;
+  width: 15rem;
+  height: 5rem;
+  box-shadow: 0rem 0rem 1rem #ffe268;
+  margin: auto;
+  margin-left: 48%;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  padding-top: 0.5rem;
+  display: flex; }
+  .pages__navigator {
+    flex: 1;
+    text-decoration: none;
+    color: rgba(255, 226, 104, 0.6);
+    font-size: 4rem;
+    margin-top: -1.7rem; }
+  .pages__number {
+    flex: 1;
+    background-color: #ffe268;
+    color: #000;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    padding-top: 1rem; }
+  .pages__navigator:hover {
+    color: rgba(255, 226, 104, 0.6); }
+
+.events__heading {
+  color: #fff;
+  text-align: center;
+  padding-top: 4.5rem;
+  font-size: 6rem; }
+
+.events__subheading {
+  padding-top: 4.5rem;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 2.2rem; }
+
+.events__heading1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 4.5rem;
+  font-size: 4rem; }
+
+.events__box {
+  display: grid;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  padding-bottom: 5rem; }
+  .events__box--heading {
+    color: #fff;
+    text-shadow: 0rem 0rem 1rem white;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .events__box--container {
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, 45%); }
 
 .members__heading {
   padding-top: 5rem;
@@ -167,8 +303,34 @@ body {
     .navbar-nav li .nav-link {
       font-size: 2.2rem; }
 
+.resources__heading {
+  padding-top: 6rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0rem 0rem 1rem white;
+  padding-top: 4.5rem;
+  font-size: 6rem; }
+
+.resources__subheading {
+  padding-top: 2.5rem;
+  color: #fff;
+  text-shadow: 0rem 0rem 1rem white;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 2.2rem; }
+
+.events {
+  margin-top: 9rem;
+  position: relative;
+  height: fit-content; }
+
 .members {
   margin-top: 9rem;
   height: fit-content;
   background: #000;
   position: relative; }
+
+.resources {
+  margin-top: 9rem;
+  position: relative;
+  height: fit-content; }

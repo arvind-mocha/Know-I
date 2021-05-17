@@ -1,0 +1,14 @@
+.announcements{
+  border: 0.25rem solid $color-yellow;
+  border-radius: 2.74rem;
+  width: 45rem;  
+  height: 5rem;
+  box-shadow: 0rem 0rem 1rem rgba($color-yellow, 1);
+  margin: auto;
+  margin-top: 5rem;
+  color: $color-white;
+  @include text-shadow-white;
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 2.2rem;
+}

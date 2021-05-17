@@ -9,3 +9,9 @@ def events(request):
 
 def members(request):
     return render(request,'App/members.html')
+
+def resources(request):
+    return render(request,'App/resources.html')
+
+def blogs(request):
+    return render(request,'App/blog.html')
