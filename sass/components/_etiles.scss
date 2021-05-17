@@ -1,44 +1,45 @@
-.etiles {  
-  height:48rem;
-  width: 25rem;
+.etiles {
+  height: 50rem;
+
   background-color: $color-black;
   color: $color-white;
   border: 0.25rem solid $color-yellow;
   border-radius: 2.2rem;
   box-shadow: 0rem 0rem 1rem rgba($color-yellow, 0.8);
   overflow: hidden;
-  transform: translateX(40%);
 
   &__imag {
     border-bottom: 0.25rem solid $color-yellow;
+    img {
+      height: 22rem;
     }
-  
-    &__title {
-      background-color: transparent;
-      text-align: center;
-      color: $color-white;
-      padding-top: 2rem;
-      opacity: 0.8;
-    }
-  
-    &__description {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      background-color: transparent;
-      color: $color-white;
-      text-align: center;
-      font-size: medium;
-      opacity: 0.8;
-    }
+  }
 
-    &__date {
-      background-color: transparent;
-      text-align: center;
-      color: $color-yellow;
-      opacity: 0.8;
-    }
+  &__title {
+    background-color: transparent;
+    text-align: center;
+    color: $color-white;
+    padding-top: 1rem;
+    opacity: 0.8;
+  }
 
-    &__link{
-      text-decoration: none;
-    }
+  &__description {
+    padding: 2rem;
+    background-color: transparent;
+    color: $color-white;
+    text-align: center;
+    font-size: medium;
+    opacity: 0.8;
+  }
+
+  &__date {
+    background-color: transparent;
+    text-align: center;
+    color: $color-yellow;
+    opacity: 0.8;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
 }
