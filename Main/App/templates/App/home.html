@@ -1,1 +1,46 @@
-{% extends "App/base.html" %} {% load static %} {% block content %} {% endblock %}
+{% extends "App/base.html" %} {% load static %} {% block content %} 
+<main class="container-fluid home">
+    <h1 class="home__heading">KNOW-I</h1>
+    <h3 class="home__subheading">RESEARCH. LEARN. INNOVATE.</h3>
+    <div class="home__socials">
+        <a href="https://www.instagram.com/_know_i_/" target="_blank" rel="noopener">
+            <img src="{% static 'images/icons/instagram.png' %}" alt="Instagram: @_know_i_" /></a>
+        <a href="https://www.linkedin.com/company/know-i/" target="_blank" rel="noopener">
+            <img src="{% static 'images/icons/linkedin.png' %}" alt="Linkedin: KNOW-I" /></a>
+        <a href="mailto:knowisvce@gmail.com" target="_blank" rel="noopener">
+            <img src="{% static 'images/icons/gmail.png' %}" alt="Gmail: knowisvce@gmail.com" /></a>
+    </div>
+    <a class="btn">
+        <h3 class="btn__text">LEARN MORE ABOUT US</h3> 
+    </a>
+    <div class="container-fluid about">
+        <div class="row justify-content-around who">
+            <div class="col-md-6">
+                <img class="about__img--left" src="{% static 'images/about/who-logo.png' %}" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h1 class="about__heading">WHO</h1>
+                <div class="about__p">The Know-I research club was established in March 2018, as a forum for enhancing knowledge in the fields of Artificial Intelligence, Machine learning, Deep learning and Computer vision for the students of Sri Venkateswara College of Engineering.</div>
+            </div>
+        </div>
+        <div class="row justify-content-around what">
+            <div class="col-md-6">
+                <h1 class="about__heading">WHAT</h1>
+                <div class="about__p">This forum acts as a platform for the students, faculty and industry experts to share their experiences and work collaboratively to provide intelligent solutions for real world problems. We bridge students to learn and to innovate, under our guidance.</div>
+            </div>
+            <div class="col-md-6">
+                <img class="about__img--left" src="{% static 'images/about/what.png' %}" alt="" />
+            </div>
+        </div>
+        <div class="row justify-content-around how">
+            <div class="col-md-6">
+                <img class="about__img--left" src="{% static 'images/about/how.png' %}" alt="" />
+            </div>
+            <div class="col-md-6">
+                <h1 class="about__heading">HOW</h1>
+                <div class="about__p">One of the club’s priorities is to encourage students to get involved in research based activities. To achieve this, the forum has an exuberant team consisting of faculty and students to organize competitions, workshops, project presentations etc.</div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

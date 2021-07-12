@@ -1,34 +1,37 @@
-.pages{
-    border: 0.25rem solid $color-yellow;
-    border-radius: 2.2rem;
-    width: 15rem;  
-    height: 5rem;
-    box-shadow: 0rem 0rem 1rem rgba($color-yellow, 1);
-    margin: auto;
-    margin-left: 48%;
-    @include text-shadow-white;
-    text-align: center;
-    padding-top: 0.5rem;
-    display: flex;
+.pages {
+  border: 0.25rem solid $color-yellow;
+  border-radius: 2.2rem;
+  width: 20rem;
+  height: 5rem;
+  box-shadow: 0rem 0rem 1rem rgba($color-yellow, 1);
+  @include text-shadow-white;
+  text-align: center;
+  padding-top: 0.5rem;
+  display: flex;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
-    &__navigator{
-        flex: 1;
-        text-decoration: none;
-        color: rgba($color-yellow, 0.6);
-        font-size: 4rem;
-        margin-top: -1.7rem;
-    }
+  &__navigator {
+    flex: 1;
+    text-decoration: none;
+    color: rgba($color-yellow, 0.6);
+    font-size: 4rem;
+    margin-top: -1.7rem;
+  }
 
-    &__number{
-        flex: 1;
-        background-color: $color-yellow;
-        color: $color-black;
-        font-size: 1.5rem;
-        margin-top: -0.5rem;
-        padding-top: 1rem;
-    }
-    
-    &__navigator:hover{
-        color: rgba($color-yellow, 0.6);
-    }
+  &__number {
+    flex: 1;
+    background-color: $color-yellow;
+    color: $color-black;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    padding-top: 1rem;
+  }
+
+  &__navigator:hover {
+    color: rgba($color-yellow, 0.6);
+  }
 }
