@@ -307,27 +307,27 @@ body {
     .members__box--container {
       column-gap: 3rem; } }
 
-.home__heading {
-  padding-top: 5rem;
-  color: #fff;
-  text-shadow: 0rem 0rem 1rem white;
-  font-size: 5rem;
-  text-align: center; }
-
-.home__subheading {
-  color: #fff;
-  text-shadow: 0rem 0rem 1rem white;
-  text-align: center;
-  opacity: 0.8;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  font-size: 2rem; }
-
-.home__socials {
-  width: 50%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
-  transform: translateX(50%); }
+.home {
+  padding-bottom: 2rem; }
+  .home__heading {
+    padding-top: 5rem;
+    color: #fff;
+    text-shadow: 0rem 0rem 1rem white;
+    font-size: 5rem;
+    text-align: center; }
+  .home__subheading {
+    color: #fff;
+    text-shadow: 0rem 0rem 1rem white;
+    text-align: center;
+    opacity: 0.8;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 2rem; }
+  .home__socials {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+    transform: translateX(50%); }
 
 .about {
   color: #fff;
