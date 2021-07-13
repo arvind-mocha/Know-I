@@ -2,6 +2,21 @@
   text-shadow: 0rem 0rem 1rem rgba($color-white, 1);
 }
 
+@mixin button {
+  border-radius: 1.74rem;
+  display: inline-block;
+  background-color: $color-gold;
+  color:$color-black;
+  font-weight: bold;
+  padding: 1rem 2rem 0.5rem;
+  text-decoration: none;
+  box-shadow: 0rem 0rem 1rem rgba($color-yellow, 1);
+
+  &:hover {
+    box-shadow: 0rem 0rem 1.5rem rgba($color-yellow, 1);
+  }
+}
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone-small {
     @media only screen and (max-width: 30.5em) {
