@@ -15,8 +15,8 @@
  &__heading1{
   color: $color-white;
   text-align: center;
-  padding-top: 4.5rem;
   font-size: 4rem;
+  padding-bottom: 2rem;
   }
 
   &__box {
@@ -36,9 +36,31 @@
 
     &--container {
       display: grid;
-      column-gap: 5rem;
+      column-gap: 10rem;
       row-gap: 4rem;
-      grid-template-columns: repeat(auto-fit, 40%);
+      grid-template-columns: repeat(auto-fit, minmax(6.375rem, 1fr));
+    }
+  }
+}
+@include respond(phone-small){
+  .events{
+    &__box{
+      width:20%;
+      left: 50%;
+      &--container{
+        row-gap: 6rem;
+      }
+    }
+  }
+}
+@include respond(phone-medium){
+  .events{
+    &__box{
+      width:40%;
+      left: 40%;
+    }
+    &--container{
+      row-gap: 20rem;
     }
   }
 }
