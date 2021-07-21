@@ -1,0 +1,33 @@
+.acolumns {
+    &__text{
+      color: $color-white;
+    @include text-shadow-white;
+      &--heading {
+       padding-top: 5rem;
+       font-size: 5rem;
+       padding-left: 1rem;
+       text-align: left;
+     }
+   
+     &--p {
+       font-size: 1.5rem;
+       padding-left: 1rem;
+       text-align: left;
+     }
+    }
+    &__img {
+      width: 30rem;
+      object-fit: fill;
+      padding-left: 5rem;
+      position: relative;
+
+       /*&--left {
+         float:left;
+       }
+
+       &--right{
+         float: right;
+       }*/
+     }
+   }
+   

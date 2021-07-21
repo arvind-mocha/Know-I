@@ -3,5 +3,8 @@
     position: relative;
     top: 60%;
     bottom: 50%;
-    left: 40%;
+    margin-bottom: 3rem;
+    &__text{
+        justify-content: center;
+    }
 }
