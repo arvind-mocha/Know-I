@@ -1,22 +1,22 @@
-.events{
-    &__heading{
+.events {
+  &__heading {
     color: $color-white;
     text-align: center;
     padding-top: 4.5rem;
     font-size: 6rem;
   }
-&__subheading {
-   padding-top: 4.5rem;
-   color: $color-white;
-   text-align: center;
-   padding-bottom: 5rem;
-   font-size: 2.2rem;
- }
- &__heading1{
-  color: $color-white;
-  text-align: center;
-  font-size: 4rem;
-  padding-bottom: 2rem;
+  &__subheading {
+    padding-top: 4.5rem;
+    color: $color-white;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 2.2rem;
+  }
+  &__heading1 {
+    color: $color-white;
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 2rem;
   }
 
   &__box {
@@ -38,29 +38,45 @@
       display: grid;
       column-gap: 10rem;
       row-gap: 4rem;
-      grid-template-columns: repeat(auto-fit, minmax(6.375rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
     }
   }
 }
-@include respond(phone-small){
-  .events{
-    &__box{
-      width:20%;
-      left: 50%;
-      &--container{
-        row-gap: 6rem;
+
+@include respond(tab-land) {
+  .events {
+    &__box {
+      width: 50%;
+    }
+  }
+}
+
+@include respond(tab-port) {
+  .events {
+    &__box {
+      width: 65%;
+    }
+  }
+}
+
+@include respond(phone-small) {
+  .events {
+    &__box {
+      &--container {
+        grid-template-columns: 80%;
+        justify-content: center;
       }
     }
   }
 }
-@include respond(phone-medium){
-  .events{
-    &__box{
-      width:40%;
-      left: 40%;
-    }
-    &--container{
-      row-gap: 20rem;
+@include respond(phone) {
+  .events {
+    &__box {
+      width: 85%;
+
+      &--container {
+        column-gap: 3rem;
+      }
     }
   }
 }
