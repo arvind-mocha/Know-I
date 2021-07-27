@@ -25,6 +25,7 @@
 
   &__button{
     text-align: center;
+    padding-bottom: 2.5rem;
   }
   &__about{
     display: grid;
@@ -38,7 +39,17 @@
       display: grid;
       column-gap: 5rem;
       row-gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(20.375rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(26.375rem, 1fr));
+    }
+  }
+}
+@include respond(phone-small){
+  .home{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    &__socials{
+      padding-left: 0rem;
+      padding-right: 0.5rem;
     }
   }
 }

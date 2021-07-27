@@ -46,14 +46,13 @@
   .events{
     &__box{
       width:20%;
-      left: 50%;
       &--container{
         row-gap: 6rem;
       }
     }
   }
 }
-@include respond(phone-medium){
+/*@include respond(phone-medium){
   .events{
     &__box{
       width:40%;
@@ -63,4 +62,4 @@
       row-gap: 20rem;
     }
   }
-}
+}*/
